@@ -1,0 +1,39 @@
+<html>
+<!-- © PANOimagen 2021 -->
+<!-- El equipo PANOimagen os desea Feliz Navidad y un próspero 2022-->
+<!-- www.panoimagen.com -->
+<head>
+    <meta charset="UTF-8">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+    <link rel="stylesheet" href="Navidad.css">
+</head>
+    <body>
+    <!-- Use it like any other HTML element -->
+       
+        <div background-color: black>
+            <model-viewer style="width: 100%; height: 100%; top: 0px;  position: sticky; background-color: black;"
+             bounds="tight" src="models/Belen.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" 
+             poster="img/poster.jpg"              
+             shadow-intensity="1" camera-orbit="637.3deg 86.36deg auto" min-camera-orbit="-111deg 82deg 4.601m" max-camera-orbit="-69deg 94deg auto" 
+             min-field-of-view="37.6deg">
+
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div>
+            </model-viewer>
+            <div>
+                <a href="https://www.panoimagen.com"><img src="img/FelizNavidadPANOimagen.jpg" alt="Feliz Navidad - PANOimagen" width="20%" id="logo"></img></a>
+            </div>
+            <p id="legend">Belén rural en la aldea de Santa Marina - La Rioja</p>
+        </div>
+    </body>
+
+</html>
