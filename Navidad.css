@@ -14,7 +14,6 @@ body {
 }
 
 #legend{
-    /* To play around, change this to absolute */
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -29,3 +28,21 @@ body {
 model-viewer {
     --poster-color: transparent;
   }
+
+  
+#greetings{
+    position: fixed;
+    top: 0px;
+    right: 40px;
+    z-index: 1;
+    padding: 5px;
+    margin: 5px;
+    outline: 2px lightgray;
+    text-shadow: darkgray;
+    color: lightgray;
+    font-size: 30px;
+    font-family: "Mr Dafoe";
+}
+#title {
+    font-size: 60px;
+}
